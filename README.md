@@ -1,4 +1,12 @@
-# zkSync Hardhat project
+## Debug factory
+
+- Install dependencies with `yarn`
+- Compile contracts with `yarn harhdat compile`
+- Start local setup node in a separate terminal
+- Run deployment script with `yarn hardhat deploy-zksync`
+
+
+## zkSync Hardhat project
 
 This project was scaffolded with [zksync-cli](https://github.com/matter-labs/zksync-cli).
 
