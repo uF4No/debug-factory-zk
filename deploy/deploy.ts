@@ -9,7 +9,7 @@ export default async function (hre: HardhatRuntimeEnvironment) {
     "0x7726827caac94a7f9e1b160f7ea819f172f7b6f9d2a97f992c38edeab82d4110"
   );
   const deployer = new Deployer(hre, wallet);
-  const factoryArtifact = await deployer.loadArtifact("SimpleFactory");
+  const factoryArtifact = await deployer.loadArtifact("Factory2");
   const childArtifact = await deployer.loadArtifact("Child");
   const stepChildArtifact = await deployer.loadArtifact("StepChild");
 

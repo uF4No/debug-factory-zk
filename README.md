@@ -3,7 +3,24 @@
 - Install dependencies with `yarn`
 - Compile contracts with `yarn harhdat compile`
 - Start local setup node in a separate terminal
-- Run deployment script with `yarn hardhat deploy-zksync`
+- Run deployment script with `yarn hardhat deploy-zksync --script deploy.ts`
+- Call method to deploy one of the contracts from the factory via systemContractCaller `yarn hardhat deploy-zksync --script use-fac.ts`
+- Call method to deploy one of the contracts from the factory via new `yarn hardhat deploy-zksync --script use-fac.ts`
+
+## Deploy with isSystem
+
+Estimated fee is 0.00043091925 ETH
+Factory address: 0x4B5DF730c2e6b28E17013A1485E5d9BC41Efe021
+
+Calling newStepChild()
+
+  reason: 'cannot estimate gas; transaction may fail or may require manual gas limit',
+  code: 'UNPREDICTABLE_GAS_LIMIT',
+
+Calling createStepChild()
+
+ reason: 'cannot estimate gas; transaction may fail or may require manual gas limit',
+  code: 'UNPREDICTABLE_GAS_LIMIT',
 
 
 ## zkSync Hardhat project

@@ -7,7 +7,9 @@ const config: HardhatUserConfig = {
   zksolc: {
     version: "1.3.8",
     compilerSource: "binary",
-    settings: {},
+    settings: {
+      isSystem: true,
+    },
   },
   defaultNetwork: "zkSyncLocal",
   networks: {
