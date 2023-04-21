@@ -76,6 +76,14 @@ contract Factory2 {
         emit ChildCreated(accountAddress, data);
     }
 
+    function childrenAmount() external view returns (uint) {
+        return childAddresses.length;
+    }
+
+    function stepChildrenAmount() external view returns (uint) {
+        return stepChildren.length;
+    }
+
     function getChildren() external view returns (Child[] memory _children) {
         _children = new Child[](children.length - disabledCount);
         uint256 count;

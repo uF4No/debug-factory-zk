@@ -4,8 +4,9 @@
 - Compile contracts with `yarn harhdat compile`
 - Start local setup node in a separate terminal
 - Run deployment script with `yarn hardhat deploy-zksync --script deploy.ts`
-- Call method to deploy one of the contracts from the factory via systemContractCaller `yarn hardhat deploy-zksync --script use-fac.ts`
-- Call method to deploy one of the contracts from the factory via new `yarn hardhat deploy-zksync --script use-fac.ts`
+- Copy the factory address and enter it in the `use-fac.ts` file.
+- Run script with `yarn hardhat deploy-zksync --script use-fac.ts`. It deploys new contracts via the factory with systemContractCaller and via `new`. Prints in console the amount of deployed contracts and addresses.
+
 
 ## Deploy with isSystem
 
